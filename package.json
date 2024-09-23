@@ -1,0 +1,25 @@
+{
+  "name": "hivequerylanguageextension",
+  "displayName": "HiveQueryLanguageExtension",
+  "description": "HQL插件，支持关键字、函数、运算符、字符串高亮显示",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hql",
+      "aliases": ["hql", "hql"],
+      "extensions": [".hql",".sql"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hql",
+      "scopeName": "source.hql",
+      "path": "./syntaxes/hql.tmLanguage.json"
+    }]
+  }
+}
